@@ -11,12 +11,21 @@
     state: present
   with_items:
     - ansible
+    - autoconf
+    - bash-completion
     - cmake
     - curl
+    - doxygen
     - git
+    - ssh-copy-id
+    - mcrypt
+    - node
+    - nmap
     - npm
+    - openssl
     - python
     - ruby
+    - wget
 
 - name: Install XQuartz
   homebrew_cask:
