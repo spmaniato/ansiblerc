@@ -7,7 +7,7 @@
   with_items:
     - vim
 
-- name: Install editors (Homebrew cask)
+- name: Install editors (Caskroom)
   homebrew_cask:
     name: "{{ item }}"
     state: present

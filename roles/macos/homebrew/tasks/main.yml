@@ -1,0 +1,17 @@
+---
+
+- name: Homebrew taps
+  homebrew_tap:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - buo/cask-upgrade
+    - caskroom/cask
+    - homebrew/core
+    - homebrew/science
+    - homebrew/python
+
+- name: Homebrew update and upgrade
+  homebrew:
+    update_homebrew: yes
+    upgrade_all: yes

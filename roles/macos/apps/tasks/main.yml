@@ -1,6 +1,6 @@
 ---
 
-- name: Install various apps and utilities (Homebrew cask)
+- name: Install various apps and utilities (Caskroom)
   homebrew_cask:
     name: "{{ item }}"
     state: present
