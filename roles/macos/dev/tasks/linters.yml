@@ -17,3 +17,10 @@
     global: yes
   with_items:
     - dockerlint
+
+- name: Install linters (Homebrew)
+  homebrew:
+    name: "{{ item }}"
+    state: latest
+  with_items:
+    - shellcheck

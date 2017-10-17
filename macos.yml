@@ -2,4 +2,5 @@
 - hosts: all
 
   roles:
-    - {role: macos/dev}
+    - macos/dev
+    - macos/apps
