@@ -1,0 +1,24 @@
+---
+
+- name: Ethereum Homebrew tap
+  homebrew_tap:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - ethereum/ethereum
+
+- name: Install crypto stuff (Homebrew)
+  homebrew:
+    formula: "{{ item }}"
+    state: present
+  with_items:
+    - ethereum
+
+- name: Install various crypto apps (Caskroom)
+  homebrew_cask:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - keybase
+    - mist
+    - zcash4mac
