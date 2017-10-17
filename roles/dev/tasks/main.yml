@@ -1,0 +1,17 @@
+---
+
+- name: Homebrew update and upgrade
+  homebrew:
+    update_homebrew: yes
+    upgrade_all: yes
+
+- name: Install iTerm2
+  homebrew_cask:
+    cask: iterm2
+    state: present
+
+- include_tasks: editors.yml
+
+- include_tasks: linters.yml
+
+- include_tasks: virtualization.yml
