@@ -13,6 +13,7 @@
     state: present
   with_items:
     - ethereum
+    - ipfs
 
 - name: Install various crypto apps (Caskroom)
   homebrew_cask:
