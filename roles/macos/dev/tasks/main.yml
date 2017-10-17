@@ -10,8 +10,24 @@
     cask: iterm2
     state: present
 
-- include_tasks: editors.yml
+- name: Install the basics
+  homebrew:
+    formula: "{{ item }}"
+    state: present
+  with_items:
+    - git
+    - python
 
-- include_tasks: linters.yml
+- name: Install XQuartz
+  homebrew_cask:
+    cask: xquartz
+    state: present
 
-- include_tasks: virtualization.yml
+- name: Editors
+  include_tasks: editors.yml
+
+- name: Linters
+  include_tasks: linters.yml
+
+- name: VMs and Containers
+  include_tasks: virtualization.yml
