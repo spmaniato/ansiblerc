@@ -1,0 +1,19 @@
+---
+
+- name: Install linters (pip)
+  pip:
+    name: "{{ item }}"
+    state: latest
+  with_items:
+    - catkin-lint
+    - cmakelint
+    - ansible-lint
+    - yamllint
+
+- name: Install linters (npm)
+  npm:
+    name: "{{ item }}"
+    state: latest
+    global: yes
+  with_items:
+    - dockerlint
