@@ -10,8 +10,13 @@
     formula: "{{ item }}"
     state: present
   with_items:
+    - ansible
+    - cmake
+    - curl
     - git
+    - npm
     - python
+    - ruby
 
 - name: Install XQuartz
   homebrew_cask:
