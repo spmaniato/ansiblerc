@@ -1,10 +1,5 @@
 ---
 
-- name: Homebrew update and upgrade
-  homebrew:
-    update_homebrew: yes
-    upgrade_all: yes
-
 - name: Install iTerm2
   homebrew_cask:
     cask: iterm2
