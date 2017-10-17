@@ -1,0 +1,10 @@
+---
+
+- name: Install editors (Homebrew cask)
+  homebrew_cask:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - docker
+    - vagrant
+    - virtualbox
