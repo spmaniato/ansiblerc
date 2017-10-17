@@ -8,7 +8,13 @@ any way you like. Examples:
 - `brew install ansible`
 - `pip install ansible`
 
-Then, run the macOS playbook:
+You may also need to install Xcode Command Line Tools:
+
+```
+xcode-select --install
+```
+
+Finally, run the macOS playbook:
 
 ```bash
 ansible-playbook -i localhost macos.yml
