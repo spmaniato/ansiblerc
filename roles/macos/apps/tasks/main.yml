@@ -1,0 +1,19 @@
+---
+
+- name: Homebrew update and upgrade
+  homebrew:
+    update_homebrew: yes
+    upgrade_all: yes
+
+- name: Install various apps and utilities (Homebrew cask)
+  homebrew_cask:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - 1password
+    - etcher
+    - gimp
+    - malwarebytes
+    # - skype
+    # - slack
+    - spectacle
