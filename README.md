@@ -1,5 +1,9 @@
 # Provision a Development Machine using Ansible
 
+Ansible playbooks for provisioning macOS and Linux development machines.
+
+The name `ansiblerc` is an allusion to scripts such as `.bashrc` in Linux.
+
 ## macOS
 
 First of all, install [Ansible](http://docs.ansible.com/ansible/latest/index.html)
