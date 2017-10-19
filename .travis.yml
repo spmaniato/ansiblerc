@@ -1,0 +1,17 @@
+branches:
+  only:
+    - master
+
+notifications:
+  email:
+    on_success: change
+    on_failure: change
+
+os: osx
+osx_image: xcode9.1
+
+install:
+  - brew install ansible
+
+script:
+  - ansible-playbook -i localhost macos.yml
