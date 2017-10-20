@@ -24,4 +24,5 @@
     name: "{{ item }}"
     state: latest
   with_items:
+    - clang-format
     - shellcheck
