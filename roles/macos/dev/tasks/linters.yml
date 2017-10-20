@@ -8,7 +8,6 @@
     - ansible-lint
     - catkin-lint
     - cmakelint
-    - flake8
     - yamllint
 
 - name: Install linters (npm)
@@ -26,3 +25,12 @@
   with_items:
     - clang-format
     - shellcheck
+
+- name: Install testing tools (pip)
+  pip:
+    name: "{{ item }}"
+    state: latest
+  with_items:
+    - flake8
+    - nose-cov
+    - rednose
