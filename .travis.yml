@@ -1,0 +1,20 @@
+branches:
+  only:
+    - master
+
+notifications:
+  email:
+    on_success: change
+    on_failure: change
+
+os: osx
+osx_image: xcode9.1
+
+before_install:
+  - brew update
+  - brew install ansible
+  - brew install ansible-lint
+
+script:
+  - ansible-lint macos.yml roles/macos/*
+  - ansible-playbook -i localhost macos.yml

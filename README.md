@@ -1,4 +1,4 @@
-# Provision a Development Machine using Ansible
+# Provision a Development Machine using Ansible [![Build Status][build_img]][travis_repo]
 
 Ansible playbooks for provisioning macOS and Linux development machines.
 
@@ -27,3 +27,6 @@ ansible-playbook -i localhost macos.yml
 ## Ubuntu
 
 Coming soon ...
+
+[build_img]: https://travis-ci.org/spmaniato/ansiblerc.svg?branch=master
+[travis_repo]: https://travis-ci.org/spmaniato/ansiblerc
