@@ -32,5 +32,5 @@
     state: latest
   with_items:
     - flake8
-    - nose-cov
+    # - nose-cov (Permission denied: /usr/local/man)
     - rednose
