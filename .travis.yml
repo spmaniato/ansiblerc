@@ -16,4 +16,5 @@ before_install:
   - brew install ansible-lint
 
 script:
+  - ansible-lint macos.yml roles/macos/*
   - ansible-playbook -i localhost macos.yml
