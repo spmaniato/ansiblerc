@@ -5,9 +5,10 @@
     name: "{{ item }}"
     state: latest
   with_items:
+    - ansible-lint
     - catkin-lint
     - cmakelint
-    - ansible-lint
+    - flake8
     - yamllint
 
 - name: Install linters (npm)
