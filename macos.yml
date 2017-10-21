@@ -6,3 +6,7 @@
     - macos/dev
     - macos/apps
     - macos/crypto
+
+  post_tasks:
+    - name: Clean up
+      command: brew cleanup
