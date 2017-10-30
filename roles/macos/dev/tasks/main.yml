@@ -5,7 +5,7 @@
     cask: iterm2
     state: present
 
-- name: Install the basics
+- name: Install the basics (Homebrew)
   homebrew:
     formula: "{{ item }}"
     state: present
@@ -26,6 +26,13 @@
     - python
     - ruby
     - wget
+
+- name: Install the basics (pip)
+  pip:
+    name: "{{ item }}"
+    state: latest
+  with_items:
+    - bpython
 
 - name: Install XQuartz
   homebrew_cask:
