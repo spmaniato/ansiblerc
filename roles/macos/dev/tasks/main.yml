@@ -42,6 +42,9 @@
 - name: Editors
   include_tasks: editors.yml
 
+- name: Hardware
+  include_tasks: hardware.yml
+
 - name: Linters
   include_tasks: linters.yml
 
