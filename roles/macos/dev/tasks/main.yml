@@ -12,6 +12,7 @@
   with_items:
     - ansible
     - autoconf
+    - awscli
     - bash-completion
     - cmake
     - curl
