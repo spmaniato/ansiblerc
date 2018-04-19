@@ -9,8 +9,6 @@
     - caskroom/cask
     - caskroom/drivers
     - homebrew/core
-    - homebrew/science
-    - homebrew/python
 
 - name: Homebrew update and upgrade
   homebrew:
