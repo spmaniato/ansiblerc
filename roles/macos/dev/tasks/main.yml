@@ -36,6 +36,8 @@
   with_items:
     - boto3
     - bpython
+    - mock
+    - nose
 
 - name: Install XQuartz
   homebrew_cask:
