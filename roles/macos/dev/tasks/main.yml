@@ -14,6 +14,7 @@
     - autoconf
     - awscli
     - bash-completion
+    - bash-git-prompt
     - cmake
     - curl
     - doxygen
