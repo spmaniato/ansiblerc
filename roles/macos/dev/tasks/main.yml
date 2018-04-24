@@ -34,6 +34,7 @@
     name: "{{ item }}"
     state: latest
   with_items:
+    - boto3
     - bpython
 
 - name: Install XQuartz
