@@ -19,6 +19,7 @@
     - curl
     - doxygen
     - git
+    - ipcalc
     - ssh-copy-id
     - mcrypt
     - node
