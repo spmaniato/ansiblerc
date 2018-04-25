@@ -39,6 +39,13 @@
     - mock
     - nose
 
+- name: Install the basics (gem)
+  gem:
+    name: "{{ item }}"
+    state: latest
+  with_items:
+    - fpm
+
 - name: Install XQuartz
   homebrew_cask:
     cask: xquartz
